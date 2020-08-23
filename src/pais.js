@@ -5,6 +5,9 @@ const styles = ()=>({
         width:'350px',
         height: '200px',
         objectFit: 'cover'
+    },
+    button:{
+        background: 'green'
     }
 })
 
@@ -24,7 +27,7 @@ export default function Pais(props) {
             {
                 open === true ? (
                     <div>
-                        <h6>{paisData.piedras || '' }</h6>
+                        <button style={style.button}><h6>{paisData.piedras || '' }</h6></button>
                          {
                             paisData.typos? (
                                 paisData.typos.map((elemento, index)=>{
